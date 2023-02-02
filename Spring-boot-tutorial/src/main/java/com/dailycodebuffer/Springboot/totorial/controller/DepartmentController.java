@@ -53,4 +53,9 @@ public class DepartmentController {
     public Department fetchDepartmentByName (@PathVariable("name") String departmentName) {
         return departmentService.fetchDepartmentByName(departmentName);
     }
+
+    @GetMapping("/test")
+    public Integer fetchTest () {
+        return departmentService.test();
+    }
 }
